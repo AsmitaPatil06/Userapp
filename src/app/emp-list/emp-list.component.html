@@ -1,0 +1,31 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">EamilId</th>
+            <th scope="col">Username</th>
+            <th scope="col">website</th>
+            <th scope="col">Company Name</th>
+            <th scope="col">Address</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let list of EmpList; index as i">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ list.name}}</td>
+            <td>{{ list.phone}}</td>
+            <td>{{ list.email}}</td>
+            <td>{{ list.username}}</td>
+            <td>{{ list.website}}</td>
+            <td>{{ list.company.name}}</td>
+            <td>{{ list.address.city}}</td>
+            <td> <i class="bi bi-pencil-fill" (click)="onEdit(list)"></i></td>
+            <td><i style="color: rgb(245, 127, 127);" class="bi bi-trash-fill" (click)="Ondelete(list)"></i></td>
+        </tr>
+
+    </tbody>
+</table>

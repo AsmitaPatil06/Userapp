@@ -1,0 +1,14 @@
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
+.loginSection {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
+    width: 500px;
+    margin-top: 10px;
+}

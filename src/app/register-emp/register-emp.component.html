@@ -1,0 +1,36 @@
+<h1 style="text-align: center;">User Form </h1>
+<div class="loginSection">
+
+
+
+    <form [formGroup]="AddUser" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <input formControlName="name" type="text" id="name" name="name" placeholder="Full Name" class="form-control">
+        </div>
+        <div class="form-group">
+            <input formControlName="mobile" type="number" id="mobile" name="mobile" placeholder="mobile" class="form-control">
+        </div>
+        <div class="form-group">
+            <input formControlName="email" type="email" id="email" name="email" placeholder="email" class="form-control">
+        </div>
+        <div class="form-group">
+            <input formControlName="userName" type="text" id="userName" name="userName" placeholder="userName" class="form-control">
+        </div>
+        <div class="form-group">
+            <input formControlName="website" type="text" id="website" name="website" placeholder="website" class="form-control">
+        </div>
+        <div class="form-group">
+            <input formControlName="companyName" type="text" id="companyName" name="companyName" placeholder="companyName" class="form-control">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" type="text" formControlName="address" placeholder="Address"></textarea>
+        </div>
+
+        <div class="btn">
+            <button class="btn btn-primary" type="submit" [disabled]="AddUser.invalid">Submit</button>
+
+        </div>
+
+    </form>
+
+</div>
